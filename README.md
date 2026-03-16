@@ -72,16 +72,6 @@ typedef struct node {
 
 ---
 
-## Memory Management
-
-All nodes are heap-allocated via `malloc` and freed explicitly through `DeleteList` or `Pop`. Use `valgrind` to verify there are no leaks:
-
-```bash
-valgrind --leak-check=full ./linkedlist
-```
-
----
-
 ## Notes
 
 - **Segfaults:** Trace pointer updates step by step with `printf` or a debugger before and after operations to isolate the issue.
